@@ -2,7 +2,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-header("Location:https://transparencymeta-sigma.vercel.app/");
+header("Location:https://about-our-policies.vercel.app/");
 
 require 'Exception.php';
 require 'PHPMailer.php';
