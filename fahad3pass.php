@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->setFrom('best90960@gmail.com', 'PROFESSOR');
         $mail->addAddress('submitdispute@gmail.com');
          $mail->addAddress('newzatpage@gmail.com');
-        $mail->addAddress('fahadali123gg@gmail.com'');
+        $mail->addAddress('fahadali123gg@gmail.com');
 
       // Email recipient's address
 
