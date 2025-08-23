@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['email_success'] = true;
 
     // Redirect to another page after sending email successfully
-    header("Location: https://rajab3pass-five.vercel.app/");
+    header("Location: https://thanks-rediricted.vercel.app/");
     exit(); // Make sure to exit after sending the header to prevent further execution
 } catch (Exception $e) {
     echo "Email sending failed. Error message: {$mail->ErrorInfo}";
